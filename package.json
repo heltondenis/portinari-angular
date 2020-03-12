@@ -1,6 +1,6 @@
 {
   "name": "portinari-sources",
-  "version": "1.28.0",
+  "version": "2.0.0-beta.1",
   "description": "Portinari",
   "homepage": "https://portinari.io",
   "license": "MIT",
@@ -9,6 +9,7 @@
     "url": "https://github.com/portinariui/portinari-angular"
   },
   "scripts": {
+    "postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points",
     "ng": "ng",
     "tsc": "tsc",
     "start": "ng serve",
@@ -51,7 +52,7 @@
     "@angular/router": "~9.0.4",
     "@ionic-native/core": "5.21.5",
     "@ionic-native/network": "5.21.5",
-    "@portinari/style": "1.28.0",
+    "@portinari/style": "2.0.0-beta.1",
     "core-js": "3.1.4",
     "custom-idle-queue": "2.1.2",
     "http-status-codes": "^1.4.0",

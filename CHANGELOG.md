@@ -1,5 +1,36 @@
 # Changelog
 
+## [2.0.0-beta.1](https://github.com/portinariui/portinari-angular/compare/v1.28.0...v2.0.0-beta.1) (2020-03-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* **fields:** removida a propriedade `p-focus`
+
+Foi removida a propriedade `p-focus`, deve-se utilizar a propriedade `p-auto-focus`.
+Os componentes afetados são:
+- datepicker;
+- decimal;
+- email,
+- input;
+- login;
+- lookup;
+- multiselect
+- number;
+- password;
+- textarea;
+- url;
+
+Antes: ``` <po-component p-focus></po-component> ```
+
+Depois: ``` <po-component p-auto-focus></po-component> ```
+
+* **fields:** remove propriedade `p-focus` ([d3ba2d5](https://github.com/portinariui/portinari-angular/commit/d3ba2d599d9029504a21bccb8e94a7477f78515b))
+
+### DEPRECATIONS
+
+
+
 ## [1.28.0](https://github.com/portinariui/portinari-angular/compare/v1.27.1...v1.28.0) (2020-03-06)
 
 
