@@ -594,9 +594,11 @@ describe('PoTableComponent:', () => {
     expect(component['verifyWidthColumnsPixels']()).toBe(false);
   });
 
-  xit('should set table height', () => {
+  it('should set table height', () => {
     component.columns = [...columns];
+    spyOn(component, <any>'getHeightTableFooter').and.returnValue(0);
     component.height = 150;
+
     fixture.detectChanges();
     expect(tableElement.offsetHeight + tableFooterElement.offsetHeight).toBe(150);
   });
